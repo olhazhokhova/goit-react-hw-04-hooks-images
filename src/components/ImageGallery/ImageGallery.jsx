@@ -1,11 +1,8 @@
-import React from 'react';
 import PropTypes from "prop-types";
-
 import ImageGalleryItem from '../ImageGalleryItem';
-
 import s from './ImageGallery.module.css';
 
-function ImageGallery({ images, onImageClick }) { 
+const ImageGallery = ({ images, onImageClick }) => { 
     return (
         <ul className={s.gallery}>
             {images.map((image, index) => {
